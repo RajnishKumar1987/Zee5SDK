@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "Zee5 Player SDK for iOS."
 
-  s.homepage     = "http://www.jwplayer.com/products/mobile-sdk/"
+  s.homepage     = "https://github.com/RajnishKumar1987/Zee5SDK.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
   s.authors      = { "JW Player" => "sendtorajnishkumar@gmail.com" }
@@ -13,7 +13,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/RajnishKumar1987/Zee5SDK.git", :tag => s.version.to_s }
 
   s.ios.vendored_frameworks = "ZEE5PlayerSDK.framework"
-
+    s.dependency 'FBAudienceNetwork'
+    s.dependency 'JWPlayer-SDK', '~> 3.0'
+    s.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.8'
   s.requires_arc = true
 
 end
